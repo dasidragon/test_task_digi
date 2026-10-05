@@ -10,11 +10,7 @@ import {
     type Dispatch,
 } from '@/store/map-store.ts'
 import type { LayerType } from '@/api/geo/GeoModel'
-import {
-    fetchTemperatureData,
-    fetchWindData,
-    fetchInsolationData,
-} from '@/api/geo/GeoController'
+import { fetchTemperatureData, fetchWindData, fetchInsolationData } from '@/api/geo/GeoController'
 
 const loadSingleLayer = async (dispatch: Dispatch, layerId: LayerType) => {
     setLayerLoadingStatus(dispatch, layerId, 'loading')

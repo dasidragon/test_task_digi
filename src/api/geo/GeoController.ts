@@ -7,12 +7,7 @@ import type {
     LayerSnapshot,
     StationLocation,
 } from './GeoModel'
-import {
-    TIME_POINTS,
-    TEMPERATURE_STATIONS,
-    WIND_STATIONS,
-    INSOLATION_STATIONS,
-} from './geo.mock'
+import { TIME_POINTS, TEMPERATURE_STATIONS, WIND_STATIONS, INSOLATION_STATIONS } from './geo.mock'
 
 const delay = async (ms: number) => {
     await new Promise(resolve => {

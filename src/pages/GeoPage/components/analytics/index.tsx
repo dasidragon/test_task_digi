@@ -73,7 +73,8 @@ export const Analytics = ({ className }: AnalyticsProps) => {
                         onChange={() => toggleLayerVisibility(dispatch, 'temperature')}
                         size='small'
                     />
-                }>
+                }
+            >
                 {layers.temperature.visible ? (
                     <ChartContainer>
                         <ResponsiveContainer width='100%' height='100%'>
@@ -113,7 +114,8 @@ export const Analytics = ({ className }: AnalyticsProps) => {
                         <Tag color='cyan'>м/с</Tag>
                     </Space>
                 }
-                extra={<Switch checked={layers.wind.visible} onChange={() => toggleLayerVisibility(dispatch, 'wind')} size='small' />}>
+                extra={<Switch checked={layers.wind.visible} onChange={() => toggleLayerVisibility(dispatch, 'wind')} size='small' />}
+            >
                 {layers.wind.visible ? (
                     <ChartContainer>
                         <ResponsiveContainer width='100%' height='100%'>
@@ -161,7 +163,8 @@ export const Analytics = ({ className }: AnalyticsProps) => {
                         onChange={() => toggleLayerVisibility(dispatch, 'insolation')}
                         size='small'
                     />
-                }>
+                }
+            >
                 {layers.insolation.visible ? (
                     <ChartContainer>
                         <ResponsiveContainer width='100%' height='100%'>

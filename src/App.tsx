@@ -10,7 +10,8 @@ const App = () => {
                     colorPrimary: '#1677ff',
                     borderRadius: 6,
                 },
-            }}>
+            }}
+        >
             <MapStoreProvider>
                 <GeoPage />
             </MapStoreProvider>

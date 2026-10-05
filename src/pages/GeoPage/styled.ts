@@ -1,6 +1,5 @@
 import styled from '@emotion/styled'
 import { Layout, Flex } from 'antd'
-import { Space } from 'antd'
 
 const { Header, Footer } = Layout
 
